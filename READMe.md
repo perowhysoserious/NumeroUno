@@ -23,6 +23,9 @@ The system's security posture was validated by using Lynis.
  Post-Hardening Score:65
  Status: Compliant with Core CIS Level 1 Requirements.
 
+![Lynis Suggestions](lynis_suggestions.png)
+![Lynis Score](lynis_score.png)
+
 ## Lessons Learned
  Version Adaptation: Successfully adapted a Debian 11 CIS role for Debian 13 by implementing variable overrides.
  Conflict Resolution: Identified and resolved a kernel module conflict where `usb-storage` was held open by the UTM hypervisor.
