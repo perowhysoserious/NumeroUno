@@ -1,0 +1,6 @@
+---
+ansible_distribution_major_version: "11"
+# This is a dummy PBKDF2 hash for the password 'password123'
+# In a real ISSE environment, you would generate this with grub-mkpasswd-pbkdf2
+debian11cis_bootloader_password_hash: "grub.pbkdf2.sha512.10000.7483...[dummy_data]...654321"
+debian11cis_set_bootloader_password: false
