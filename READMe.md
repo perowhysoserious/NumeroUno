@@ -23,7 +23,7 @@ The system's security posture was validated by using Lynis.
  Post-Hardening Score:65
  Status: Compliant with Core CIS Level 1 Requirements.
 
-![Lynis Suggestions](lynis_suggestions.png)
+
 ![Lynis Score](lynis_score.png)
 
 ## Lessons Learned
