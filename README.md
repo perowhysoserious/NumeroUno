@@ -9,14 +9,14 @@ Automated security hardening and compliance auditing solution for Linux OS (Debi
  Auditing:Lynis Security Auditor
  Standards: CIS Debian 11 Benchmark (Adapted for Debian 13)
 
- ## Quick Start
+## Quick Start
 
- Prerequisites
+### Prerequisites
 - Debian 11/12/13 system (VM)
 - Ansible 2.9+
 - SSH access to target system
 
-#Deployment
+### Deployment
 
 # Clone repository
 git clone https://github.com/perowhysoserious/NumeroUno.git
@@ -31,7 +31,7 @@ ansible-playbook -i hosts.ini harden.yml
 # Validate with Lynis
 lynis audit system
 
-# What Gets Configured
+### What Gets Configured
 - SSH hardening (disable root login, key-only auth)
 - Password complexity enforcement
 - USB storage kernel module blacklisting
