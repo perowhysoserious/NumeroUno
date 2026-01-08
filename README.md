@@ -3,7 +3,6 @@
 ## Project
 Automated security hardening and compliance auditing solution for Linux OS (Debian 13), demonstrating IaC security practices. This project implements CIS Benchmark Level 1 controls using Ansible, achieving an improvement in security posture (Lynis score: 35 → 65).
 
-
 ## ️ Tech
  OS:Debian 13 (Testing)
  Automation: Ansible
@@ -12,12 +11,12 @@ Automated security hardening and compliance auditing solution for Linux OS (Debi
 
  ## Quick Start
 
-### Prerequisites
+ Prerequisites
 - Debian 11/12/13 system (VM)
 - Ansible 2.9+
 - SSH access to target system
 
-### Deployment
+## Deployment
 
 # Clone repository
 git clone https://github.com/perowhysoserious/NumeroUno.git
@@ -31,9 +30,8 @@ ansible-playbook -i hosts.ini harden.yml
 
 # Validate with Lynis
 lynis audit system
-```
 
-### What Gets Configured
+# What Gets Configured
 - SSH hardening (disable root login, key-only auth)
 - Password complexity enforcement
 - USB storage kernel module blacklisting
@@ -54,7 +52,6 @@ The system's security posture was validated by using Lynis.
  Pre-Hardening Score:35
  Post-Hardening Score:65
  Status: Compliant with Core CIS Level 1 Requirements.
-
 
 ![Lynis Score](lynis_score.png)
 
