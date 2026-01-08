@@ -1,7 +1,8 @@
 # Automated Security Hardening & Compliance Auditing (Debian 13)
 
 ## Project
-This project demonstrates the automated implementation of a security baseline on Linux OS (Debian 13) VM via UTM. Utilizing Ansible I deployed a configuration-as-code solution to enforce CIS (Center for Internet Security) benchmarks,reducing the system's attack surface.
+Automated security hardening and compliance auditing solution for Linux OS (Debian 13), demonstrating IaC security practices. This project implements CIS Benchmark Level 1 controls using Ansible, achieving an improvement in security posture (Lynis score: 35 → 65).
+
 
 ## ️ Tech
  OS:Debian 13 (Testing)
@@ -9,13 +10,15 @@ This project demonstrates the automated implementation of a security baseline on
  Auditing:Lynis Security Auditor
  Standards: CIS Debian 11 Benchmark (Adapted for Debian 13)
 
+ 
+
 ##  Security Controls Implemented
 | Control Category | Technical Action | Result |
  
- Identity & Auth | Disabled Root SSH login; Enforced Password Complexity |
- System Protection | Blacklisted `usb-storage` kernel modules |
- System Monitoring | Configured `systemd-journald` for audit trails |
- Legal Compliance | Deployed mandatory System Use Banners (MOTD) |
+ Identity & Auth | Disabled Root SSH login; Enforced Password Complexity | Implemented |
+ System Protection | Blacklisted `usb-storage` kernel modules | Implemented |
+ System Monitoring | Configured `systemd-journald` for audit trails | Implemented |
+ Legal Compliance | Deployed mandatory System Use Banners (MOTD) | Implemented |
 
 ## Results
 The system's security posture was validated by using Lynis. 
@@ -29,3 +32,6 @@ The system's security posture was validated by using Lynis.
 ## Lessons Learned
  Version Adaptation: Successfully adapted a Debian 11 CIS role for Debian 13 by implementing variable overrides.
  Conflict Resolution: Identified and resolved a kernel module conflict where `usb-storage` was held open by the UTM hypervisor.
+ Validation: I built the playbook to check the system state before acting and added an automated Lynis audit to verify the security results.
+
+
