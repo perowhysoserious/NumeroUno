@@ -16,7 +16,7 @@ Automated security hardening and compliance auditing solution for Linux OS (Debi
 - Ansible 2.9+
 - SSH access to target system
 
-## Deployment
+#Deployment
 
 # Clone repository
 git clone https://github.com/perowhysoserious/NumeroUno.git
